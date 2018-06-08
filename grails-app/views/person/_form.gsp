@@ -26,3 +26,11 @@
 	<g:textField name="lastName" value="${personInstance?.lastName}" />
 </div>
 
+<div class="fieldcontain ${hasErrors(bean: personInstance, field: 'foo', 'error')} ">
+	<label for="foo">
+		<g:message code="person.foo.label" default="foo" />
+		
+	</label>
+	<g:textField name="foo" value="${personInstance?.foo}" />
+</div>
+

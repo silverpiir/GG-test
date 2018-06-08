@@ -49,6 +49,15 @@
 					
 				</li>
 				</g:if>
+				
+				<g:if test="${personInstance?.foo}">
+				<li class="fieldcontain">
+					<span id="foo-label" class="property-label"><g:message code="person.foo.label" default="foo" /></span>
+					
+						<span class="property-value" aria-labelledby="foo-label"><g:fieldValue bean="${personInstance}" field="foo"/></span>
+					
+				</li>
+				</g:if>
 			
 			</ol>
 			<g:form>
